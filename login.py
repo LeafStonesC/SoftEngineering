@@ -1,10 +1,11 @@
 def login():
     # 预设的正确凭证（实际应用中不应明文存储密码！）
     CORRECT_USERNAME = "admin"
-    CORRECT_PASSWORD = "123456"  # 仅为演示，生产环境必须加密存储；明天完成
+    CORRECT_PASSWORD = "123456"  # 仅为演示，生产环境必须加密存储；后天完成
     
     max_attempts = 3 #登录次数限制
     attempts = 0
+
     print("=== 简易登录系统 ===")
     
     # 这里用 while True 配合 break 来实现
